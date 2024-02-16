@@ -1,0 +1,340 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh; 
+}
+
+#header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 7%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 13px;
+    font-family: sans-serif;
+}
+#header i{
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 100%;
+    font-size: 17px;
+}
+#header i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+#header h3{
+    font-weight: bold;
+}
+
+/* Navegação */
+nav{
+    background-color: #414fb8;
+    color: white;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    margin-top: 2.4rem;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+nav a{
+    color: white;
+}
+
+nav div{
+    width: 95%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: 13px;
+}
+nav div:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+}
+
+/* ClassList JavaScriptc| Navigation */
+.navbar-active{
+    display: flex;
+}
+.navbar-off{
+    display: none;
+}
+
+
+
+
+main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container-banner{
+    background-color: rgba(255, 0, 0, 0.26);
+    width: 100%;
+    height: 23%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    align-items: center;
+    flex-direction: row;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.298);
+}
+#banner{
+    background: linear-gradient(to bottom,rgb(246, 162, 6), white 85%);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#banner #image-banner{
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#img-usp{
+    width: 52%;
+    height: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#img-usp img{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#image-banner p{
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    font-size: 11px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: -0.2rem;
+}
+
+/* Text info type user */
+#type-user{
+    margin-top: 1.7rem;
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-weight: bold;
+}
+
+
+
+#container-image{
+    background-color: white;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../Images/fotoUser.jpeg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* Listras */
+.range{
+    width: 100%;
+    height: 0.5rem;
+}
+
+#orange-range{
+    background: linear-gradient(to bottom,orange, rgb(249, 223, 59)) ;
+}
+
+#blue-range{
+    background:linear-gradient(to bottom, rgb(2, 239, 239), rgb(7, 199, 199), rgba(0, 0, 0, 0.472));
+}
+
+
+
+/* Container | Dados do usuário */
+#container-userdata{
+    background-color: rgba(180, 177, 177, 0.034);
+    width: 100%;
+    height: 30%;
+    margin-top: 0.1rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+
+/* Classe de estilos  */
+.container-info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 15rem;
+}
+
+#container-info-aluno{
+    width: 98%;
+    height: 50%;
+}
+
+#container-info-school{
+    height: 50%;
+    width: 98%;
+}
+
+/* Info Aluno */
+#container-info-aluno p:nth-child(1){
+    margin-top: -2rem;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+}
+#container-info-aluno p:nth-child(2){
+    font-family: sans-serif;
+    font-size: 12px;
+}
+#container-info-aluno #qr-code-id-aluno{
+    height: 90%;
+    width: 20%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url(../Images/qrCodeImage.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+#qr-code-id-aluno:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Info Escola */
+#container-info-school p:nth-child(1){
+    margin-top: -2rem;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 550;
+}
+#container-info-school p:nth-child(2){
+    font-family: sans-serif;
+    font-size: 12px;
+}
+
+/* Widget Navbar */
+#widget{
+    background-color: red;
+    width: 100%;
+    height: 23rem;
+    position: fixed;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#header-widget{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 10%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7rem;
+    
+}
+
+#icon-header-widget{
+    margin-left: 1rem;
+    width: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5rem;
+}
+.content-widget{
+    background-color: white;
+    width: 100%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+
+
+@media screen and (min-width: 390px){
+    #image-banner p{
+        margin-top: 0.3rem;
+    }
+    #type-user{
+        margin-top: 3rem;
+        font-size: 20px;
+    }
+    #navbar{
+        margin-top: 3.4rem;
+    }
+}
